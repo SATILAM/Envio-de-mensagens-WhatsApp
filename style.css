@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+label {
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+  
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: aliceblue;
+    background-color: transparent;
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+/* Define as cores da borda */
+    border-color: aliceblue;
+    transition: border-color 0.5s ease-in-out;
+}
+  
+/* Define a cor da borda quando o campo está em foco */
+input[type="text"]:focus {
+    border-color: rgb(72, 157, 255);
+}
+  
+button {
+    background-color: rgba(139, 124, 124, 0.63);
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+  
+button:hover {
+    background-color: rgb(81, 184, 90);
+    transition: 0.5s;
+}
+
+@keyframes border-animation {
+    0% {
+      border-color: #FF6347; /* cor inicial */
+    }
+    50% {
+      border-color: #00FFFF; /* cor intermediária */
+    }
+    100% {
+      border-color: #ac47ff; /* cor final */
+    }
+}
+  
+input[type="text"] {
+/* propriedades de estilo */
+    padding: 10px;
+    border: 2px solid #FF6347; /* cor inicial da borda */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: aliceblue;
+    background-color: transparent;
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+    /* animação */
+    animation: border-animation 5s infinite;
+}
+
+footer {
+    outline: 0.4rem solid rgb(74, 21, 85);
+    color: #a34b02;
+    margin-block-start: 100px;
+    border: 3px solid rgb(253, 4, 4);
+    border-radius: 5px;
+}
